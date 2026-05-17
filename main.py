@@ -111,7 +111,7 @@ if __name__ == '__main__':
         print("Compressor needs <gpu_type> <path>")
         sys.exit(1)
 
-    gpu = sys.argv[1]
+    gpu = Path(sys.argv[1])
     path = sys.argv[2]
 
     while True:
