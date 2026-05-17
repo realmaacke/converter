@@ -6,7 +6,7 @@ import time
 
 class compressor:
 
-    EXTENSIONS = [".mkv", ".mp4", ".avi", ".mov", ".m4v", ".ts", ".m2ts", ".wmv"]
+    EXTENSIONS = [".mkv", ".mp4", ".avi"]
     ALREADY_ENCODED = ["hevc", "h265"]
 
     has_nvidia = False
