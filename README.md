@@ -1,13 +1,11 @@
 ## Converter
 
-Encodes mkv files with HEVC to reduce disk usage.
-the .service file is put into **/etc/systemd/system/media-compressor.service**
-in the service file, change the arguments to match you're specific path.
+Systemd serivce to transcode media files into a HVEC format.
 
-
-run theese files to get the service running:
-```
-sudo systemctl daemon-reload
-sudo systemctl enable compressor.service
-sudo systemctl start compressor.service
-``
+### Configuration
+1. Change settings in the media-compressor.service file, (i.e, name, python path, actual path, gpu type, ...)
+2. cp service file to **/etc/systemd/system/media-compressor.service**
+3. sudo systemctl daemon-reload
+4. sudo systemctl enable media-compressor.service
+5. sudo systemctl start media-compressor.service
+6. sudo systemctl status media-compressor.service
