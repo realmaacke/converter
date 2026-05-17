@@ -1,6 +1,10 @@
 ## Converter
 
 Systemd serivce to transcode media files into a HVEC format.
+The program runs on a loop every hour.
+The first argument of the program takes "amd" or "nvidia".
+The second argument is the path of where the program is to search.
+
 
 ### Configuration
 1. Change settings in the media-compressor.service file, (i.e, name, python path, actual path, gpu type, ...)
