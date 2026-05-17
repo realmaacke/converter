@@ -1,0 +1,12 @@
+[Unit]
+Description=Video Compressor Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/devuser/main.py /mnt/media
+Restart=always
+RestartSec=5
+User=devuser
+
+[Install]
+WantedBy=multi-user.target
