@@ -4,5 +4,5 @@ After=network.target
 
 [Service]
 Type=oneshots
-ExecStart=/usr/bin/python3 /home/devuser/main.py /mnt/media
+ExecStart=/usr/bin/python3 /home/devuser/media/utility/converter/main.py /home/devuser/media/
 User=devuser
