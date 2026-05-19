@@ -114,6 +114,4 @@ if __name__ == '__main__':
     gpu = sys.argv[1]
     path = Path(sys.argv[2])
 
-    while True:
-        compressor(gpu, path)
-        time.sleep(3600)
+    compressor(gpu, path)
