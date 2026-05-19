@@ -1,12 +1,8 @@
 [Unit]
-Description=Video Compressor Daemon
+Description=Media Compressor Job
 After=network.target
 
 [Service]
+Type=oneshots
 ExecStart=/usr/bin/python3 /home/devuser/main.py /mnt/media
-Restart=always
-RestartSec=5
 User=devuser
-
-[Install]
-WantedBy=multi-user.target
